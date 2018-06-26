@@ -1,8 +1,8 @@
 .background
 {
-    background-image: url("images/stars.jpg");
+    background: -webkit-linear-gradient(left top,#70ba70,rgb(13, 197, 253) );
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 .mainframe
 {
