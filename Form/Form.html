@@ -2,14 +2,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.min.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
         </script>
         <title>
             Prophet
         </title>
         </head>
-    <body class="background">
-        <div class="mainframe">
+    <body class="background" ng-app="">
+        <div class="mainframe" >
             <h1 class="mainheader">
                 ~Please answer the questıons below~
             </h1>
@@ -36,7 +36,8 @@
                         4 - What is your country?
                     </h1>
                     <select class="textinput" id="country">
-                            {<option value="AFG">Afghanistan</option>
+                            {<option value="">--Select--</option>
+                            <option value="AFG">Afghanistan</option>
                             <option value="ALA">Åland Islands</option>
                             <option value="ALB">Albania</option>
                             <option value="DZA">Algeria</option>
@@ -297,7 +298,58 @@
                     <br>
                     <input type="radio" name="gender" value="other">Other</input>
             </div>
+            <div class="questionbox">
+                <h1 class="questiontitle">
+                    6 - What is your marital status?
+                </h1>
+                <input type="radio" name="marital" value="single">Single</input>
+                <br>
+                <input type="radio" name="marital" value="married">Married</input>
+                <br>
+                <input type="radio" name="marital" value="widowed">Widowed</input>
+                <br>
+                <input type="radio" name="marital" value="divorced">Divorced</input>
+            </div>
+            <div class="questionbox" ng-init="onfocus1=true;startup1=true">
+                <h1 class="questiontitle">
+                    7 - What is your favorite color?
+                </h1>
+                <input class="textinput" type="text" placeholder="Please enter your favorite color...">
+                <label class="questionmark" ng-mouseenter="onfocus1=false;startup1=false" ng-mouseleave="onfocus1=true">?</label>
+                <label ng-hide="startup1" ng-class="{mouseenter:!onfocus1,mouseexit:onfocus1}"> Examples: Red, Blue, Yellow, Green...</label>
+            </div>
+            <div class="questionbox" ng-init="onfocus2=true;startup2=true">
+                <h1 class="questiontitle">
+                    8 - What is your favorite food?
+                </h1>
+                <input class="textinput" type="text" placeholder="Please enter your favorite food...">
+                <label class="questionmark" ng-mouseenter="onfocus2=false;startup2=false" ng-mouseleave="onfocus2=true">?</label>
+                <label ng-hide="startup2" ng-class="{mouseenter:!onfocus2,mouseexit:onfocus2}"> Examples: Hamburger, Pizza...</label>
+            </div>
+            <div class="questionbox" ng-init="onfocus3=true;startup3=true">
+                <h1 class="questiontitle">
+                    9 - What is your favorite activity?
+                </h1>
+                <input class="textinput" type="text" placeholder="Please enter your favorite activity...">
+                <label class="questionmark" ng-mouseenter="onfocus3=false;startup3=false" ng-mouseleave="onfocus3=true">?</label>
+                <label ng-hide="startup3" ng-class="{mouseenter:!onfocus3,mouseexit:onfocus3}"> Examples: Listening to music, Playing computer games...</label>
+            </div>
+            <div class="questionbox" ng-init="onfocus4=true;startup4=true">
+                <h1 class="questiontitle">
+                    10 - What is your favorite car brand?
+                </h1>
+                <input class="textinput" type="text" placeholder="Please enter your favorite car brand...">
+                <label class="questionmark" ng-mouseenter="onfocus4=false;startup4=false" ng-mouseleave="onfocus4=true">?</label>
+                <label ng-hide="startup4" ng-class="{mouseenter:!onfocus4,mouseexit:onfocus4}"> Examples: Porsche, Audi, Mercedes...</label>
+            </div>
+            <div class="questionbox" ng-init="onfocus5=true;startup5=true">
+                <h1 class="questiontitle">
+                    11 - What kind of smartphone do you use?
+                </h1>
+                <input class="textinput" type="text" placeholder="Please enter your smartphone model...">
+                <label class="questionmark" ng-mouseenter="onfocus5=false;startup5=false" ng-mouseleave="onfocus5=true">?</label>
+                <label ng-hide="startup5" ng-class="{mouseenter:!onfocus5,mouseexit:onfocus5}"> Examples: Apple Iphone 8, Samsung S8...</label>
+            </div>
         </div>
-
     </body>
 </html>
