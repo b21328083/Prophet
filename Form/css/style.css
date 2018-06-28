@@ -1,6 +1,9 @@
 .background
 {
     background: -webkit-linear-gradient(left top,#70ba70,rgb(13, 197, 253) );
+    background: -ms-linear-gradient(left top,#70ba70,rgb(13, 197, 253) );
+    background: -o-linear-gradient(left top,#70ba70,rgb(13, 197, 253) );
+    background: -moz-linear-gradient(left top,#70ba70,rgb(13, 197, 253) );
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
