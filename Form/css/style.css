@@ -81,3 +81,7 @@
     opacity: 1;
     transition: opacity 1s, visibility 0.1s;
 }
+.questiontitlespecial
+{
+    font-size: 150%; 
+}
